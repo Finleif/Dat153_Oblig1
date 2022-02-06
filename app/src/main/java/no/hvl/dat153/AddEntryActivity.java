@@ -6,18 +6,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class AddEntryActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_add_entry);
     }
 
-
+    // Add new entry
     public void addNewEntry(View view) {
-        Intent i = new Intent(this, AddEntryActivity.class);
+        return;
+    }
+
+    // Go back
+    public void goBack(View view) {
+        Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }
-
 }
