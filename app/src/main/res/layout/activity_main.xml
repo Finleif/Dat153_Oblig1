@@ -39,6 +39,7 @@
             android:id="@+id/take_quiz"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="beginQuiz"
             android:text="@string/take_quiz" />
 
         <Button

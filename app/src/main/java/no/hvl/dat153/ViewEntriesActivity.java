@@ -31,11 +31,21 @@ public class ViewEntriesActivity extends AppCompatActivity {
             mEntryListFragment = (EntryListFragment)fm.findFragmentByTag(TAG_LIST_FRAGMENT);
         }
 
-        List<Entry> dummyEntries = new ArrayList<Entry>(0);
-        dummyEntries.add(new Entry("Jonas", R.drawable.duckone));
-        dummyEntries.add(new Entry("Petter", R.drawable.ducktwo));
-        dummyEntries.add(new Entry("Lars", R.drawable.duckthree));
+        mEntryListFragment.setEntries(MainActivity.entries);
 
-        mEntryListFragment.setEntries(dummyEntries);
+        //MainActivity.entries.add(new Entry("Jonas", R.drawable.duckone));
+        //MainActivity.entries.add(new Entry("Petter", R.drawable.ducktwo));
+        //MainActivity.entries.add(new Entry("Lars", R.drawable.duckthree));
+
+
+
+        //List<Entry> dummyEntries = new ArrayList<Entry>(0);
+        //dummyEntries.add(new Entry("Jonas", R.drawable.duckone));
+        //dummyEntries.add(new Entry("Petter", R.drawable.ducktwo));
+        //dummyEntries.add(new Entry("Lars", R.drawable.duckthree));
+
+        //mEntryListFragment.setEntries(dummyEntries);
+
+
     }
 }

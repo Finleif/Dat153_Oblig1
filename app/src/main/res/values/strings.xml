@@ -22,4 +22,6 @@
     <string name="camera">Camera</string>
     <string name="entryImage">Entry Image</string>
     <string name="entry_name">Entry Name</string>
+    <string name="guess_button">Guess</string>
+    <string name="quiz_label_text">Who is this?</string>
 </resources>
