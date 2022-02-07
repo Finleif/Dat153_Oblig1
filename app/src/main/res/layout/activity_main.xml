@@ -3,17 +3,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
-    android:weightSum="2"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin">
+    android:orientation="vertical"
+    android:weightSum="2">
 
 
     <LinearLayout
-        android:id="@+id/quiz_top_part"
+        android:id="@+id/quizImg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -24,35 +20,27 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="@string/title"
-            android:textSize="@dimen/title_size" />
+            android:text="@string/titleText"
+            android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/bottom_part"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/take_quiz"
+            android:id="@+id/start_quiz"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/take_quiz" />
+            android:text="@string/start_quiz" />
 
         <Button
-            android:id="@+id/view_all_button"
+            android:id="@+id/peek_db"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="viewAllEntries"
-            android:text="@string/view_all" />
+            android:text="@string/peek_db" />
 
-        <Button
-            android:id="@+id/add_entry"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="addNewEntry"
-            android:text="@string/add_entry" />
     </LinearLayout>
 </LinearLayout>
