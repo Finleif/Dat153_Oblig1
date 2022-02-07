@@ -42,10 +42,11 @@
             android:text="@string/take_quiz" />
 
         <Button
-            android:id="@+id/see_list"
+            android:id="@+id/view_all_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/see_list" />
+            android:onClick="viewAllEntries"
+            android:text="@string/view_all" />
 
         <Button
             android:id="@+id/add_entry"

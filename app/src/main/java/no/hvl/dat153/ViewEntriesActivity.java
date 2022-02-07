@@ -25,7 +25,7 @@ public class ViewEntriesActivity extends AppCompatActivity {
             FragmentTransaction ft = fm.beginTransaction();
 
             mEntryListFragment = new EntryListFragment();
-            ft.add(R.id.view_entries_frame, mEntryListFragment, TAG_LIST_FRAGMENT)
+            ft.add(R.id.view_entries_frame, mEntryListFragment, TAG_LIST_FRAGMENT);
             ft.commitNow();
         } else {
             mEntryListFragment = (EntryListFragment)fm.findFragmentByTag(TAG_LIST_FRAGMENT);
@@ -35,10 +35,5 @@ public class ViewEntriesActivity extends AppCompatActivity {
         dummyEntries.add(new Entry("jonas", 0));
 
         mEntryListFragment.setEntries(dummyEntries);
-
-
     }
-
-
-
 }

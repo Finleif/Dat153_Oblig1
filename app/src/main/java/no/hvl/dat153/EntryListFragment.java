@@ -53,7 +53,7 @@ public class EntryListFragment extends Fragment {
 
     /*
     takes a List
-    of Earthquakes, checks for duplicates, and then adds each new Earthquake to the Array List.
+    of entries, checks for duplicates, and then adds each new Entry to the Array List.
     It should also notify the Recycler View Adapter that a new item has been inserted
      */
     public void setEntries(List<Entry> entries) {
