@@ -4,7 +4,7 @@ import androidx.annotation.NonNull;
 
 public class Entry {
     public String name;
-    public int imageId;
+    public int imageId; // Resource ID, for images in drawable. Example, R.drawable.duckimage
 
     public Entry(String name, int imageId) {
         this.name = name;

@@ -32,7 +32,9 @@ public class ViewEntriesActivity extends AppCompatActivity {
         }
 
         List<Entry> dummyEntries = new ArrayList<Entry>(0);
-        dummyEntries.add(new Entry("jonas", 0));
+        dummyEntries.add(new Entry("Jonas", R.drawable.duckone));
+        dummyEntries.add(new Entry("Petter", R.drawable.ducktwo));
+        dummyEntries.add(new Entry("Lars", R.drawable.duckthree));
 
         mEntryListFragment.setEntries(dummyEntries);
     }

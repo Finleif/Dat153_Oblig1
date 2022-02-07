@@ -16,6 +16,7 @@ public class AddEntryActivity extends AppCompatActivity {
 
     // Add new entry
     public void addNewEntry(View view) {
+
         return;
     }
 
