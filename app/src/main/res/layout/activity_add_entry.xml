@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddEntryActivity" >
+
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goBack"
+        android:text="@string/back" />
+
+    <TextView
+        android:id="@+id/entryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entry_name" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/entryImage"
+        app:srcCompat="@drawable/wizardgooseedited" />
+
+    <Button
+        android:id="@+id/addNewEntryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addNewEntry"
+        android:text="@string/add_new_entry" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cameraButton"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:text="@string/camera" />
+
+        <Button
+            android:id="@+id/databaseButton"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="viewAllEntries"
+            android:text="@string/view_all" />
+    </LinearLayout>
+
+</LinearLayout>
